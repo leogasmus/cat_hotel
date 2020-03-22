@@ -2,6 +2,37 @@
 @import 'libs';
 @import 'fonts';
 @import 'global';
-
+.header{
+  width: 100%;
+}
+.top-line__container{
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-line__box{
+  .logo{
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+.top-line__nav{
+  &-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-item{
+    margin-right: 30px;
+  }
+  &-link{
+    text-decoration: none;
+    color: #000;
+  }
+}
 
 @import 'media';
