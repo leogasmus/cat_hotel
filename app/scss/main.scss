@@ -31,8 +31,40 @@
   }
   &-link{
     text-decoration: none;
-    color: #000;
+    color: $black;
   }
+}
+.header-baner{
+  display: flex;
+  min-height: 504px;
+  height: calc(70vh - 5.0625rem);
+  background-image: url(../img/header_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+}
+.header-baner__content{
+  width: 50%;
+  margin-left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+.pretitle{
+  font-size: .875rem;
+  line-height: 1.063rem;
+  margin-bottom: 15px;
+}
+.h1-title{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.suptitle{
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
 }
 
 @import 'media';
