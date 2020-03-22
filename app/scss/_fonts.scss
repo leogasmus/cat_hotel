@@ -1,0 +1,16 @@
+// Lato Regular
+@font-face {
+    font-family: "Lato";
+    src:  url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/LatoRegular/LatoRegular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+// Lato Bold
+@font-face {
+font-family: "Lato";
+src:  url("../fonts/LatoBold/LatoBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/LatoBold/LatoBold.woff2") format("woff2"); /* Modern Browsers */
+font-weight: Bold;
+font-style: normal;
+}
