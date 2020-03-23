@@ -60,3 +60,103 @@ body{
     }
   }
 }
+.carousel-control{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .carousel-btn{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+    font-size: 22px;
+    color: $orange;
+    cursor: pointer;
+  }
+  .btn-next{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::after,
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 8px;
+      background: $orange;
+    }
+    &::before{
+      top: 14px;
+      left: 15px;
+      transform: rotate(45deg);
+
+    }
+    &::after{ 
+      top: 19px;
+      left: 15px;
+      transform: rotate(-45deg);
+    }
+  }
+  .btn-prev{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::after,
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 8px;
+      background: $orange;
+    }
+    &::before{
+      top: 15px;
+      left: 11px;
+      transform: rotate(-45deg);
+
+    }
+    &::after{ 
+      top: 20px;
+      left: 11px;
+      transform: rotate(45deg);
+    }
+  }
+}
+.carousel-dots{
+  .slick-dots{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+      button{
+        height: 12px;
+        width: 12px;
+        border: none;
+        font-size: 0;
+        border-radius: 50%;
+        background: $grey;
+        margin-right: 12px;
+        cursor: pointer;
+      }
+      &:last-child{
+        button{
+          margin-right: 0;
+        }
+      }
+    }
+    .slick-active{
+      button{
+        background: $orange;
+      }
+    }
+  }
+}
