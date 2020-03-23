@@ -247,5 +247,55 @@
     color: $orange;
     cursor: pointer;
   }
+  .btn-next{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::after,
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 12px;
+      background: $orange;
+    }
+    &::before{
+      top: 13px;
+      left: 14px;
+      transform: rotate(45deg);
+
+    }
+    &::after{ 
+      top: 21px;
+      left: 14px;
+      transform: rotate(-45deg);
+    }
+  }
+  .btn-prev{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::after,
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 12px;
+      background: $orange;
+    }
+    &::before{
+      top: 13px;
+      left: 10px;
+      transform: rotate(-45deg);
+
+    }
+    &::after{ 
+      top: 21px;
+      left: 10px;
+      transform: rotate(45deg);
+    }
+  }
 }
 @import 'media';
