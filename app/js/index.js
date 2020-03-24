@@ -9,10 +9,10 @@ $('.rooms-carousel').slick({
     dots: true,
     appendDots: $('.carousel-room__dots')
   });
-$('.btn-prev').on('click', function(){
+$('.carousel__room-prev').on('click', function(){
     $('.rooms-carousel').slick('slickPrev');
 })
-$('.btn-next').on('click', function(){
+$('.carousel__room-next').on('click', function(){
     $('.rooms-carousel').slick('slickNext');
 })
 //  Review carousel
@@ -28,9 +28,9 @@ $('.review-carousel').slick({
     dots: true,
     appendDots: $('.carousel-review__dots')
   });
-$('.btn-prev').on('click', function(){
+$('.carousel__review-prev').on('click', function(){
     $('.review-carousel').slick('slickPrev');
 })
-$('.btn-next').on('click', function(){
+$('.carousel__review-next').on('click', function(){
     $('.review-carousel').slick('slickNext');
 })
