@@ -243,6 +243,7 @@
   padding: 0;
 }
 .review__item{
+  width: 470px;
   margin-right: 30px;
 }
 .review-text__wrap{
@@ -253,8 +254,25 @@
     margin: 0;
     font-weight: 500;
     line-height: 140%;
+    &::before{
+      position: relative;
+      top: 1.5rem;
+      content: '\201C';
+      color: $yellow;
+      font-size: 3.5rem;
+
+    }
+  }
+  .review__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: $ligth-grey;
+    font-size: 0.9375rem;
   }
 }
+
 
 
 @import 'media';
