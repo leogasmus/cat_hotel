@@ -20,9 +20,10 @@ $('.review-carousel').slick({
     /* autoplay: true,
     speed: 1000,
     fade: true, */
+    adaptiveHeight: true,
     centerMode: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 2.1,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
