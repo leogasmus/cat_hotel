@@ -35,5 +35,5 @@ $('.carousel__review-prev').on('click', function(){
 $('.carousel__review-next').on('click', function(){
     $('.review-carousel').slick('slickNext');
 })
-const mapHeight = $('.map').height();
-$('.map-frame').css('height', mapHeight);
+const mapHeight = $('.map-info').height();
+$('.map-frame').css('height', Math.floor(mapHeight-1) + 'px');

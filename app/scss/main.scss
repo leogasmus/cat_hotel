@@ -295,7 +295,7 @@
   width: 40%;
   background: $yellow;
   padding-left: 15%;
-  border-top: 2px solid $yellow;
+  border-top: 5px solid $yellow;
   border-bottom: 4px solid $yellow;
 }
 .map-frame{
@@ -342,6 +342,9 @@
       display: block;
       border-radius: 50%;
       background: $white;
+    }
+    &:hover::after{
+      background: $yellow;
     }
   }
   &__social-item:nth-child(2){
