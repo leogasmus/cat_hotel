@@ -28,6 +28,23 @@
   }
   &-item{
     margin-right: 30px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
+      margin-top: 3px;
+      background: linear-gradient(to right, $black 0%, $lihgtin-grey 50%, $black 100%);
+      transform: scale(0);
+      transition: all .3s;
+    }
+    &:hover{
+      &:after{
+        transform: scale(1);
+      }
+    }
   }
   &-link{
     text-decoration: none;
