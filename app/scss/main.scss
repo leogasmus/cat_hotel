@@ -56,6 +56,9 @@
     color: $black;
   }
 }
+.mobile-nav__item{
+  display: none;
+}
 .header-baner{
   display: flex;
   min-height: 504px;
