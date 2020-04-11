@@ -36,6 +36,14 @@ $('.review-carousel').slick({
           infinite: true,
           dots: true
         }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          dots: true
+        }
       }
     ]
   });
