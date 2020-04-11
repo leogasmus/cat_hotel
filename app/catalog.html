@@ -46,7 +46,7 @@
     </div>
     <!-- top-line -->
   </header>
-  <main class="main">
+  <main class="rooms-main">
     <div class="container">
       <div class="page-top">
         <h2 class="h2">Наши номера</h2>
@@ -60,39 +60,39 @@
         </div>
       </div>
       <!-- /page top -->
-      <aside class="sidebar filters">
+      <div class="rooms-main__wrap"><aside class="sidebar filters">
         <form  class="form-filter">
-          <!-- Filter price -->
+        <!-- Filter price -->
           <div class="filter">
-          <p class="filter-name">Цена за сутки, &#8381;</p>
-          <div class="filter-params">
-          <input type="number" class="input-text" placeholder="от 100"> - <input type="number" class="input-text" placeholder="до 600">
-          </div>
+            <p class="filter-name">Цена за сутки, &#8381;</p>
+            <div class="filter-params">
+              <input type="number" class="input-text" placeholder="от 100"> - <input type="number" class="input-text" placeholder="до 600">
+            </div>
           
           </div>
           <!-- Filter Area-->
           <div class="filter">
-          <p class="filter-name">Площадь</p>
-          <div class="filter-params">
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 0,63 м2
-          </label>
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 0,90 м2
-          </label>
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 1,13 м2
-          </label>
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 1,56 м2
-          </label>
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 2,56 м2
-          </label>
-          <label>
-          <input type="checkbox"><span class="checkbox"></span> 2,88 м2
-          </label>
-          </div>
+            <p class="filter-name">Площадь</p>
+            <div class="filter-params">
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 0,63 м2
+            </label>
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 0,90 м2
+            </label>
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 1,13 м2
+            </label>
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 1,56 м2
+            </label>
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 2,56 м2
+            </label>
+            <label>
+            <input type="checkbox"><span class="checkbox"></span> 2,88 м2
+            </label>
+            </div>
           </div>
           <!-- Filter service -->
           <div class="filter">
@@ -120,190 +120,192 @@
           <button class="btn btn-base">Cбросить фильтр</button>
         </form>
       </aside>
-    </div>
-    <section class="rooms-wrap">
+      <!-- /.sidebar -->
+      <section class="rooms-wrap">
       <ul class="rooms__list">
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/01.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Эконом</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>90х70х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>0,63</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/none.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>100&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/02.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Эконом плюс</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>90х100х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>0,90</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/box.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/scratch.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>200&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/03.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Комфорт</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>100х125х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>1,133</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/box.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/scratch.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/ball.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>250&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/04.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Сьют</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>125х125х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>1,56</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/box.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/scratch.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/ball.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>350&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/05.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Люкс</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>160х160х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>2,56</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/box.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/scratch.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/ball.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/home.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>500&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
-        <li class="rooms__item">
-          <a href="#" class="room-item__img-link">
-            <img src="./img/catalog/06.jpg" alt="" class="rooms-item__img">
-          </a>
-          <div class="rooms-item__text">
-            <a href="#" class="rooms-item__title-link">
-              <h3 class="h3">Супер-Люкс</h3>
-            </a>
-            <ul class="rooms-item__descr-list">
-              <li class="rooms-item__descr-item">Размеры номера - <span>180х160х180</span> см</li>
-              <li class="rooms-item__descr-item">Площадь - <span>2,88</span>м2</li>
-              <li class="rooms-item__descr-item">Оснащение номера 
-                <ul class="rooms-item__equipment-list">
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/box.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/scratch.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/ball.svg" alt="">
-                  </li>
-                  <li class="rooms-item__equipment-item">
-                    <img src="./img/icons/catalog/home.svg" alt="">
-                  </li>
-                </ul>
-              </li>
-              <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>600&#8381;</span></li>
-            </ul>
-            <button class="btn">Забронировать</button>
-          </div>
-        </li>
-        <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/01.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Эконом</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>90х70х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>0,63</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/none.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>100&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/02.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Эконом плюс</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>90х100х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>0,90</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/box.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/scratch.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>200&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/03.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Комфорт</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>100х125х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>1,133</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/box.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/scratch.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/ball.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>250&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/04.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Сьют</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>125х125х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>1,56</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/box.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/scratch.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/ball.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>350&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/05.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Люкс</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>160х160х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>2,56</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/box.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/scratch.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/ball.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/home.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>500&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
+      <li class="rooms__item">
+      <a href="#" class="room-item__img-link">
+      <img src="./img/catalog/06.jpg" alt="" class="rooms-item__img">
+      </a>
+      <div class="rooms-item__text">
+      <a href="#" class="rooms-item__title-link">
+      <h3 class="h3">Супер-Люкс</h3>
+      </a>
+      <ul class="rooms-item__descr-list">
+      <li class="rooms-item__descr-item">Размеры номера - <span>180х160х180</span> см</li>
+      <li class="rooms-item__descr-item">Площадь - <span>2,88</span>м2</li>
+      <li class="rooms-item__descr-item">Оснащение номера
+      <ul class="rooms-item__equipment-list">
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/box.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/scratch.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/ball.svg" alt="">
+      </li>
+      <li class="rooms-item__equipment-item">
+      <img src="./img/icons/catalog/home.svg" alt="">
+      </li>
+      </ul>
+      </li>
+      <li class="rooms-item__descr-item rooms-item__descr-item--medium">Цена за сутки: <span>600&#8381;</span></li>
+      </ul>
+      <button class="btn">Забронировать</button>
+      </div>
+      </li>
+      <!-- /.rooms__item -->
       </ul>
       <!-- /.rooms__list -->
-    </section>
-    <!-- /.rooms-wrap -->
+      </section>
+      <!-- /.rooms-wrap -->
+    </div>
+    </div>
     <section class="special-baner">
       <h5 class="h5 baner-title">Каждый 7-й день</h5>
       <h5 class="h5 baner-title">бесплатно</h5>

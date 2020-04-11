@@ -420,4 +420,13 @@
 .footer{
   color: $footer-grey;
 }
+/* PAGE CATALOG */
+.rooms-main{
+  margin-top: 70px;
+}
+.page-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @import 'media';
