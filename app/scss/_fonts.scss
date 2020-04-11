@@ -5,6 +5,14 @@
       url("../fonts/LatoRegular/LatoRegular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+}
+// Lato Medium
+@font-face {
+  font-family: "Lato";
+  src:  url("../font/LatoMedium/LatoMedium.woff") format("woff"),
+    url("../fonts/LatoMedium/LatoMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
   }
 // Lato Bold
 @font-face {
@@ -14,6 +22,7 @@ src:  url("../fonts/LatoBold/LatoBold.woff") format("woff"),
 font-weight: Bold;
 font-style: normal;
 }
+
 // Rubik
 @font-face {
   font-family: "Rubik";

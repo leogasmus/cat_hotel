@@ -429,4 +429,38 @@
   align-items: center;
   justify-content: space-between;
 }
+.rooms-main__wrap{
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.sidebar.filters{
+  width: 30%;
+  margin-right: 90px;
+}
+.filter{
+  &-name{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 19px;
+    color: $black;
+    margin-bottom: 25px;
+  }
+}
+.input-price{
+  width: 100px;
+}
+.rooms-wrap{
+  width: 100%;
+}
+.rooms{
+  &__list{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px
+  }
+}
 @import 'media';
