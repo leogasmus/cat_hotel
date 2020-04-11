@@ -20,13 +20,18 @@
   }
 }
 .top-line__nav{
-  &-list{
+  #menu__toggle{
+    appearance: none;
+  }
+}
+.main-nav{
+  &__list{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &-item{
+  &__item{
     margin-right: 30px;
     position: relative;
     &::after{
@@ -46,7 +51,7 @@
       }
     }
   }
-  &-link{
+  &__link{
     text-decoration: none;
     color: $black;
   }
