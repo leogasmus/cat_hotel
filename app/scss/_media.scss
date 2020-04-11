@@ -1,0 +1,39 @@
+@media screen and (max-width: 1366px){
+  .container,
+  .top-line__container{
+    overflow: hidden;
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 768px){
+  .container,
+  .top-line__container{
+    max-width: 678px;
+  }
+  .header-baner{
+    background-image: url(../img/header_bg-976.jpg);
+    min-height: 768px;
+  }
+  .header-baner__content{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    top: 25%;
+  }
+  .testimonial_wrap{
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+  }
+  .carousel-img__wrap{
+    width: 60%;
+    img{
+      position: relative;
+      object-fit: cover;
+    }
+  }
+  .carousel-content{
+    padding: 40px;
+  }
+  .map-info{
+    padding-left: 3%;
+  }
+}

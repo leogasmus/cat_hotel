@@ -27,7 +27,17 @@ $('.review-carousel').slick({
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    appendDots: $('.carousel-review__dots')
+    appendDots: $('.carousel-review__dots'),
+    responsive: [
+      {
+        breakpoint: 978,
+        settings: {
+          slidesToShow: 1.8,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   });
 $('.carousel__review-prev').on('click', function(){
     $('.review-carousel').slick('slickPrev');
