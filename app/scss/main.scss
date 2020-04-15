@@ -501,5 +501,59 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px
   }
+  &-item__img-link{
+    display: inline-block;
+    width: 100%;
+  }
+  &-item__text{
+    padding: 25px;
+    font-size: 0.875em;
+    line-height: 1.063em;
+  }
+  &-item__title-link{
+    display: inline-block;
+    color: $black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    .h3{
+      margin: 0;
+    }
+  }
+  &-item__descr-list,
+  &-item__equipment-list{
+    padding: 0;
+    list-style: none;
+  }
+  &-item__descr-item{
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-item__equipment-list{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+  }
+  &-item__equipment-item{
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &-item__descr-btn{
+    margin-top: 20px;
+  }
+}
+.rooms-item__descr-item--equipment{
+  align-items: center;
+  justify-self: start;
+  display: flex;
+}
+.rooms-item__descr-item--medium{
+  span {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 @import 'media';
