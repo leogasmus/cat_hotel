@@ -473,7 +473,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   input{
     width: 90px;
     margin: 0 5px;
@@ -553,11 +553,15 @@
   }
   &-item__descr-btn{
     margin-top: 20px;
+    &::after{
+      margin-left: 0;
+      right: 10px;
+    }
   }
 }
 .rooms-item__descr-item--equipment{
   align-items: center;
-  justify-self: start;
+  justify-content: flex-start;
   display: flex;
 }
 .rooms-item__descr-item--medium{
