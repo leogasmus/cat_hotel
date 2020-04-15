@@ -463,4 +463,33 @@
     grid-gap: 30px
   }
 }
+.filter{
+  margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  &-name{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &-params{
+    display: flex;
+    flex-direction: column;
+    label{
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-weight: normal;
+      font-size: 0.875em;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.params--price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @import 'media';
