@@ -16,7 +16,25 @@
   .carousel-content__title{
     margin-top: 0;
   }
+  .room-main__images{
+    flex-direction: column-reverse;
+  }
+  .room-main__img{
+    &-item{
+      margin-bottom: 0;
+      width: 33%;
+  
+    }
+    &-list{
+      width: 100%;
+      display: flex;
+      margin-bottom: 0;
+      margin-top: 30px;
+      justify-content: space-between;
+    }
+  }
 }
+
 @media screen and (max-width: 768px){
   .container,
   .top-line__container{
@@ -205,5 +223,31 @@
     margin-top: 15px;
     flex-direction: column;
     align-items: start;
+  }
+  .room-row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .room-main__text,
+  .room-main__images{
+    width: 100%;
+  }
+  .room-main__images{
+    margin-right: 0;
+    align-items: center;
+  }
+  .room-main__img-list{
+    margin-right: 0;
+    justify-content: space-around;
+    .room-main__img-item{
+      width: 100%;
+    }
+    
+  }
+  .room-main__text{
+    margin-top: 40px;
+  }
+  .main-rooms{
+    margin-top: 0;
   }
 }
