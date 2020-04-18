@@ -4,6 +4,9 @@
     overflow: hidden;
     padding: 0 5px;
   }
+  .special-baner{
+    background-position: auto auto;
+  }
 }
 @media screen and (max-width: 980px){
   .main-rooms{
@@ -32,6 +35,9 @@
       margin-top: 30px;
       justify-content: space-between;
     }
+  }
+  .filters{
+    display: none;
   }
 }
 
@@ -249,5 +255,25 @@
   }
   .main-rooms{
     margin-top: 0;
+  }
+  .page-top{
+    flex-direction: column;
+    align-items: start;
+  }
+  .special-baner{
+    min-height: 496px;
+    background-image: url(../img/baner_bg-small.jpg);
+    background-size: cover;
+    background-position: center center;
+    .baner-content{
+      margin-left: 0;
+      text-align: center;
+    }
+    .baner-text{
+      width: 100%;
+    }
+    .baner-title--big{
+      font-size: 50px;
+    }
   }
 }
