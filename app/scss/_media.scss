@@ -39,8 +39,10 @@
   .filters{
     display: none;
   }
+  .main-rooms{
+    margin-top: 0;
+  }
 }
-
 @media screen and (max-width: 768px){
   .container,
   .top-line__container{
@@ -252,9 +254,6 @@
   }
   .room-main__text{
     margin-top: 40px;
-  }
-  .main-rooms{
-    margin-top: 0;
   }
   .page-top{
     flex-direction: column;
