@@ -596,4 +596,50 @@
     line-height: 140%;
   }
 }
+/*
+#Page Room
+==========*/
+.room-main{
+  margin-top: 70px;
+}
+.room-row,
+.room-main__images{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.room-main__images,
+.room-main__text{
+  width: 50%;
+}
+.room-main__images{
+  margin-right: 70px;
+}
+.room-main__img-list{
+  margin: 0 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.room-main__img-item{
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.h2-room__title{
+  font-weight: bold;
+  margin-top: 0;
+}
+.room-main__equipment-list{
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 0;
+  align-items: flex-start;
+  .rooms-item__equipment-item{
+    margin-bottom: 10px;
+    img{
+      margin-right: 8px;
+    }
+  }
+}
 @import 'media';
